@@ -1,0 +1,428 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#f1f3ff", "on-tertiary-fixed": "#2a1700", "surface-container-highest": "#dce2f7", "on-surface-variant": "#3e4947", "on-primary-fixed-variant": "#00504a", "on-secondary-container": "#006f66", "on-tertiary-fixed-variant": "#653e00", "secondary-fixed-dim": "#6bd8cb", "on-error-container": "#93000a", "error": "#ba1a1a", "on-surface": "#141b2b", "surface-tint": "#006a63", "outline-variant": "#bdc9c6", "inverse-surface": "#293040", "on-primary": "#ffffff", "surface-container-lowest": "#ffffff", "error-container": "#ffdad6", "tertiary-fixed-dim": "#ffb95f", "primary-fixed-dim": "#80d5cb", "inverse-primary": "#80d5cb", "on-primary-container": "#a3faef", "surface": "#f9f9ff", "on-secondary-fixed": "#00201d", "secondary-container": "#86f2e4", "primary-fixed": "#9cf2e8", "background": "#f9f9ff", "secondary-fixed": "#89f5e7", "surface-container-high": "#e1e8fd", "tertiary-container": "#945d00", "surface-container": "#e9edff", "on-secondary": "#ffffff", "on-primary-fixed": "#00201d", "on-tertiary-container": "#ffe6cc", "tertiary-fixed": "#ffddb8", "surface-bright": "#f9f9ff", "tertiary": "#734700", "primary-container": "#0f766e", "on-background": "#141b2b", "inverse-on-surface": "#edf0ff", "on-error": "#ffffff", "on-secondary-fixed-variant": "#005049", "outline": "#6e7977", "on-tertiary": "#ffffff", "surface-variant": "#dce2f7", "primary": "#005c55", "surface-dim": "#d3daef", "secondary": "#006a61" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2rem", "space-md": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1rem", "margin": "1rem", "space-sm": "0.5rem" }, fontFamily: { "label-md": ["Inter"], "body-md": ["Inter"], "label-sm": ["Inter"], "title-md": ["Inter"], "headline-md": ["Inter"], "headline-lg-mobile": ["Inter"], "title-lg": ["Inter"], "label-lg": ["Inter"], "display-currency-mobile": ["Inter"], "display-currency": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "label-md": ["12px", { lineHeight: "16px", fontWeight: "500" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.02em", fontWeight: "600" }], "title-md": ["16px", { lineHeight: "22px", fontWeight: "600" }], "headline-md": ["22px", { lineHeight: "28px", fontWeight: "600" }], "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "600" }], "title-lg": ["18px", { lineHeight: "24px", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", fontWeight: "500" }], "display-currency-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700" }], "display-currency": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-12 h-12 -ml-space-xs flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><span class="font-headline-md text-headline-md text-primary-container tracking-tight">Kanakkan</span></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-24">
+<!-- Sub-header & Context -->
+<section class="px-margin pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Smart Ledger Engine</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span> Canara Bank (..1234) &amp; UPI Linked</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Categories &amp; Payee Rules</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Auto-sort SMS spends into your 50/30/20 budget envelope seamlessly.</p>
+<!-- Status Pill Strip -->
+<div class="flex items-center gap-space-xs mt-space-xs">
+<div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">category</span>
+<span class="">11 Categories</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">rule</span>
+<span class="">8 Active Payee Rules</span>
+</div>
+</div>
+</section>
+<!-- Section 1: Categories & Budget Classification -->
+<section class="px-margin pt-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface">Categories</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Default classification for 50/30/20 rules</p>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-container text-on-secondary-container font-label-md text-label-md transition-colors hover:bg-surface-container-high active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span class="">Add category</span>
+</button>
+</div>
+<!-- Category Cards Stack -->
+<div class="flex flex-col gap-space-sm">
+<!-- Category 1: Food & Tea (Want) -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-[22px]">restaurant</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Food &amp; tea</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4 linked rules • ₹14,200 avg/mo</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">
+            Want
+          </span>
+<button aria-label="Edit Food &amp; tea" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Category 2: Groceries (Need) -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-fixed text-[22px]">local_grocery_store</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Groceries</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 linked rules • ₹9,500 avg/mo</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">
+            Need
+          </span>
+<button aria-label="Edit Groceries" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Category 3: Transport (Need) -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-fixed text-[22px]">commute</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Transport</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 linked rules • ₹4,800 avg/mo</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">
+            Need
+          </span>
+<button aria-label="Edit Transport" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Category 4: Bills & Recharge (Need) -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-fixed text-[22px]">bolt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Bills &amp; recharge</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 linked rules • ₹3,200 avg/mo</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">
+            Need
+          </span>
+<button aria-label="Edit Bills" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Category 5: Shopping (Want) -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-[22px]">shopping_bag</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Shopping</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 linked rules • ₹6,100 avg/mo</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">
+            Want
+          </span>
+<button aria-label="Edit Shopping" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Category 6: Subscriptions (Want) -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-[22px]">subscriptions</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Subscriptions</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 linked rules • ₹1,499 avg/mo</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">
+            Want
+          </span>
+<button aria-label="Edit Subscriptions" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Payee Rules -->
+<section class="px-margin pt-space-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface">Payee Rules</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Instant match pattern on incoming bank alerts</p>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md transition-colors hover:opacity-90 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">post_add</span>
+<span class="">Add rule</span>
+</button>
+</div>
+<!-- Info banner -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Whenever an SMS contains matching merchant keywords, Kanakkan tags the category and 50/30/20 bucket before you even open the app.
+      </p>
+</div>
+<!-- Rule Cards Stack -->
+<div class="flex flex-col gap-space-sm">
+<!-- Rule 1: Swiggy -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-title-md text-title-md">
+              S
+            </div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Swiggy</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Contains keyword “SWIGGY”</span>
+</div>
+</div>
+<!-- Toggle -->
+<label class="relative inline-flex items-center cursor-pointer min-h-[48px] min-w-[48px] justify-center">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:bg-primary peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[14px] after:left-[6px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all shadow-sm"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary">restaurant</span>
+              Food &amp; tea
+            </span>
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">
+              Want
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              SMS Match
+            </span>
+</div>
+<button aria-label="Edit Swiggy Rule" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Rule 2: Zomato -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-title-md text-title-md">
+              Z
+            </div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Zomato</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Contains keyword “ZOMATO”</span>
+</div>
+</div>
+<!-- Toggle -->
+<label class="relative inline-flex items-center cursor-pointer min-h-[48px] min-w-[48px] justify-center">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:bg-primary peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[14px] after:left-[6px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all shadow-sm"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary">restaurant</span>
+              Food &amp; tea
+            </span>
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">
+              Want
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              SMS Match
+            </span>
+</div>
+<button aria-label="Edit Zomato Rule" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Rule 3: Blinkit / Zepto -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-title-md text-title-md">
+              B
+            </div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Blinkit / Zepto</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">UPI ref contains “BLINKIT” or “ZEPTO”</span>
+</div>
+</div>
+<!-- Toggle -->
+<label class="relative inline-flex items-center cursor-pointer min-h-[48px] min-w-[48px] justify-center">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:bg-primary peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[14px] after:left-[6px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all shadow-sm"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">local_grocery_store</span>
+              Groceries
+            </span>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">
+              Need
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              UPI Ref
+            </span>
+</div>
+<button aria-label="Edit Blinkit Rule" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Rule 4: Uber / Ola -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-title-md text-title-md">
+              U
+            </div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Uber / Ola</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">UPI ref contains “UBER” or “OLACABS”</span>
+</div>
+</div>
+<!-- Toggle -->
+<label class="relative inline-flex items-center cursor-pointer min-h-[48px] min-w-[48px] justify-center">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:bg-primary peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[14px] after:left-[6px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all shadow-sm"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">commute</span>
+              Transport
+            </span>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">
+              Need
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              UPI Ref
+            </span>
+</div>
+<button aria-label="Edit Uber Rule" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Rule 5: BESCOM / Electricity -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-title-md text-title-md">
+              E
+            </div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">BESCOM / Electricity</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Contains keyword “BESCOM”</span>
+</div>
+</div>
+<!-- Toggle -->
+<label class="relative inline-flex items-center cursor-pointer min-h-[48px] min-w-[48px] justify-center">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:bg-primary peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[14px] after:left-[6px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all shadow-sm"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">bolt</span>
+              Bills &amp; recharge
+            </span>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">
+              Need
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              BBPS Match
+            </span>
+</div>
+<button aria-label="Edit BESCOM Rule" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Rule 6: Netflix -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-title-md text-title-md">
+              N
+            </div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Netflix</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Debit alert keyword “NETFLIX”</span>
+</div>
+</div>
+<!-- Toggle -->
+<label class="relative inline-flex items-center cursor-pointer min-h-[48px] min-w-[48px] justify-center">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:bg-primary peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[14px] after:left-[6px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all shadow-sm"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary">subscriptions</span>
+              Subscriptions
+            </span>
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">
+              Want
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              Recurring Card
+            </span>
+</div>
+<button aria-label="Edit Netflix Rule" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Add rule button -->
+<button class="w-full h-12 rounded-full bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-sm hover:opacity-90 active:scale-95 transition-all mt-space-xs" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span class="">Create New Payee Rule</span>
+</button>
+</section>
+<!-- Sticky / Bottom Floating Action Confirmation & Privacy Note -->
+<div class="fixed bottom-0 left-0 right-0 p-margin bg-surface/90 backdrop-blur-md z-40">
+<div class="max-w-md mx-auto flex flex-col gap-space-xs">
+<button class="w-full h-12 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-md hover:bg-primary transition-all active:scale-95" id="save-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="">Save &amp; Apply Preferences</span>
+</button>
+<div class="flex items-center justify-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span class="font-label-sm text-label-sm">Rules execute 100% locally on device • Zero cloud SMS sync</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple toast feedback on save
+  document.getElementById('save-btn')?.addEventListener('click', function() {
+    const originalText = this.innerHTML;
+    this.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">sync</span><span>Rules Updated!</span>';
+    setTimeout(() => {
+      this.innerHTML = originalText;
+    }, 1200);
+  });
+</script></main>
+
+</body></html>

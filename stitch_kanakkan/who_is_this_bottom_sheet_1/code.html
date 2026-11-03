@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-bright": "#f9f9ff", "surface-container-lowest": "#ffffff", "tertiary-container": "#945d00", "on-tertiary-container": "#ffe6cc", "surface-container-low": "#f1f3ff", "error-container": "#ffdad6", "surface-container-high": "#e1e8fd", "on-surface": "#141b2b", "primary-fixed-dim": "#80d5cb", "on-secondary": "#ffffff", "on-error-container": "#93000a", "on-secondary-container": "#006f66", "on-primary-fixed-variant": "#00504a", "on-primary": "#ffffff", "outline": "#6e7977", "secondary": "#006a61", "tertiary-fixed-dim": "#ffb95f", "on-secondary-fixed": "#00201d", "on-tertiary-fixed": "#2a1700", "on-tertiary": "#ffffff", "secondary-fixed": "#89f5e7", "tertiary": "#734700", "surface-container": "#e9edff", "outline-variant": "#bdc9c6", "primary": "#0f766e", "surface-container-highest": "#dce2f7", "primary-fixed": "#9cf2e8", "on-tertiary-fixed-variant": "#653e00", "on-primary-fixed": "#00201d", "on-error": "#ffffff", "background": "#f9f9ff", "inverse-surface": "#293040", "on-surface-variant": "#3e4947", "secondary-fixed-dim": "#6bd8cb", "tertiary-fixed": "#ffddb8", "on-secondary-fixed-variant": "#005049", "on-background": "#141b2b", "on-primary-container": "#a3faef", "inverse-on-surface": "#edf0ff", "surface-variant": "#dce2f7", "error": "#ba1a1a", "inverse-primary": "#80d5cb", "surface-dim": "#d3daef", "surface-tint": "#006a63", "surface": "#f9f9ff", "primary-container": "#0f766e", "secondary-container": "#86f2e4" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "space-xl": "2rem", "space-md": "1rem", "space-lg": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, fontFamily: { "display-currency-mobile": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "label-md": ["Inter"], "headline-md": ["Inter"], "body-lg": ["Inter"], "title-lg": ["Inter"], "headline-lg-mobile": ["Inter"], "body-sm": ["Inter"], "title-md": ["Inter"], "display-currency": ["Inter"], "label-sm": ["Inter"], "headline-lg": ["Inter"] }, fontSize: { "display-currency-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "display-currency": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col relative select-none">
+<!-- Exactly ONE Header at the top of the mobile screen -->
+<header class="fixed top-0 w-full z-40 pt-safe bg-surface/90 backdrop-blur-md border-b border-surface-container/60">
+<div class="px-margin h-14 flex items-center justify-between">
+<h1 class="font-bold text-xl tracking-tight text-[#0F766E]">Kanakkan</h1>
+<a class="w-10 h-10 flex items-center justify-center" data-path="settings" href="#">
+<div class="w-8 h-8 rounded-full bg-[#0F766E] text-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">person</span>
+</div>
+</a>
+</div>
+</header>
+<!-- Main View Area with Dimmed Background Home Mockup -->
+<main class="flex-1 flex flex-col relative w-full pb-20 pt-16 bg-surface overflow-hidden">
+<!-- Ambient Clean Home Screen behind Modal Scrim (No balances, no good evening) -->
+<div class="w-full px-margin pt-4 space-y-3 opacity-30 pointer-events-none filter blur-[0.5px]">
+<!-- Quick Status Mock Tile -->
+<div class="bg-surface-container rounded-xl p-4 shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<div class="h-3.5 w-24 bg-surface-container-highest rounded-full"></div>
+<div class="h-3 w-16 bg-surface-container-highest rounded-full"></div>
+</div>
+<div class="h-6 w-32 bg-surface-container-highest rounded-lg mb-3"></div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-primary/40 h-full rounded-full w-2/3"></div>
+</div>
+</div>
+<!-- Quick Action Cards Row Mock -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest rounded-xl p-3.5 border border-surface-container flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary/70">
+<span class="material-symbols-outlined text-[18px]">pie_chart</span>
+</div>
+<div class="space-y-1.5 flex-1">
+<div class="h-3 w-14 bg-surface-container-highest rounded-full"></div>
+<div class="h-2 w-10 bg-surface-container-high rounded-full"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-3.5 border border-surface-container flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary/70">
+<span class="material-symbols-outlined text-[18px]">category</span>
+</div>
+<div class="space-y-1.5 flex-1">
+<div class="h-3 w-14 bg-surface-container-highest rounded-full"></div>
+<div class="h-2 w-10 bg-surface-container-high rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Activity Items Mock -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 border border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary/70">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</div>
+<div class="space-y-1.5">
+<div class="h-3 w-20 bg-surface-container-highest rounded-full"></div>
+<div class="h-2 w-16 bg-surface-container-high rounded-full"></div>
+</div>
+</div>
+<div class="h-4 w-12 bg-surface-container-highest rounded-full"></div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-3.5 border border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary/70">
+<span class="material-symbols-outlined text-[18px]">receipt</span>
+</div>
+<div class="space-y-1.5">
+<div class="h-3 w-24 bg-surface-container-highest rounded-full"></div>
+<div class="h-2 w-14 bg-surface-container-high rounded-full"></div>
+</div>
+</div>
+<div class="h-4 w-10 bg-surface-container-highest rounded-full"></div>
+</div>
+</div>
+<!-- Scrim Backdrop Overlay -->
+<div class="fixed inset-0 bg-[#141b2b]/40 z-30 pointer-events-auto backdrop-blur-[2px]"></div>
+<!-- Bottom Sheet Modal Container -->
+<div class="fixed inset-x-0 bottom-20 z-40 flex flex-col justify-end pointer-events-auto max-h-[85vh]">
+<div class="w-full bg-surface-container-lowest rounded-t-[28px] shadow-2xl border-t border-surface-container px-margin pt-2.5 pb-3.5 flex flex-col max-h-[82vh] overflow-y-auto">
+<!-- Material 3 Centered Drag Handle -->
+<div class="w-full flex justify-center py-1.5 shrink-0">
+<div class="w-10 h-1.5 rounded-full bg-outline-variant/80"></div>
+</div>
+<!-- Sheet Title & Detected Spend Card -->
+<div class="mt-1 shrink-0">
+<h2 class="font-bold text-xl text-on-surface tracking-tight">What for?</h2>
+<!-- Spend Transaction Banner/Card -->
+<div class="mt-2.5 bg-surface-container-low border border-surface-container rounded-xl p-3 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-[#0F766E]/10 text-[#0F766E] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_cafe</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="text-xs font-medium text-on-surface-variant">Detected spend</span>
+<span class="font-semibold text-sm text-on-surface truncate">Tea Stall</span>
+</div>
+</div>
+<span class="text-lg font-bold text-[#0F766E] shrink-0">₹20</span>
+</div>
+</div>
+<form class="mt-3.5 flex flex-col gap-3.5" id="spend-form" onsubmit="event.preventDefault();">
+<!-- Category Grid with Selection Chips / Cards -->
+<div>
+<span class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider block mb-2">Category</span>
+<div aria-label="Spend Category" class="grid grid-cols-3 gap-2" role="radiogroup">
+<!-- 1. Food and tea (pre-selected / highlighted) -->
+<label class="category-chip flex flex-col items-center justify-center p-2 rounded-xl border border-[#0F766E] bg-[#0F766E] text-white cursor-pointer shadow-sm transition-all text-center">
+<input checked="" class="sr-only" name="spend_category" type="radio" value="Food and tea"/>
+<span class="material-symbols-outlined text-[20px] mb-0.5">restaurant</span>
+<span class="text-xs font-semibold leading-tight">Food &amp; tea</span>
+</label>
+<!-- 2. Groceries -->
+<label class="category-chip flex flex-col items-center justify-center p-2 rounded-xl border border-surface-container-high bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-all text-center">
+<input class="sr-only" name="spend_category" type="radio" value="Groceries"/>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant mb-0.5">shopping_cart</span>
+<span class="text-xs font-medium leading-tight">Groceries</span>
+</label>
+<!-- 3. Transport -->
+<label class="category-chip flex flex-col items-center justify-center p-2 rounded-xl border border-surface-container-high bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-all text-center">
+<input class="sr-only" name="spend_category" type="radio" value="Transport"/>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant mb-0.5">directions_subway</span>
+<span class="text-xs font-medium leading-tight">Transport</span>
+</label>
+<!-- 4. Bills and recharge -->
+<label class="category-chip flex flex-col items-center justify-center p-2 rounded-xl border border-surface-container-high bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-all text-center">
+<input class="sr-only" name="spend_category" type="radio" value="Bills and recharge"/>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant mb-0.5">bolt</span>
+<span class="text-xs font-medium leading-tight">Bills &amp; recharge</span>
+</label>
+<!-- 5. Home -->
+<label class="category-chip flex flex-col items-center justify-center p-2 rounded-xl border border-surface-container-high bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-all text-center">
+<input class="sr-only" name="spend_category" type="radio" value="Home"/>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant mb-0.5">roofing</span>
+<span class="text-xs font-medium leading-tight">Home</span>
+</label>
+<!-- 6. Health -->
+<label class="category-chip flex flex-col items-center justify-center p-2 rounded-xl border border-surface-container-high bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-all text-center">
+<input class="sr-only" name="spend_category" type="radio" value="Health"/>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant mb-0.5">health_and_safety</span>
+<span class="text-xs font-medium leading-tight">Health</span>
+</label>
+<!-- 7. Shopping -->
+<label class="category-chip flex flex-col items-center justify-center p-2 rounded-xl border border-surface-container-high bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-all text-center">
+<input class="sr-only" name="spend_category" type="radio" value="Shopping"/>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant mb-0.5">shopping_bag</span>
+<span class="text-xs font-medium leading-tight">Shopping</span>
+</label>
+<!-- 8. Subscriptions -->
+<label class="category-chip flex flex-col items-center justify-center p-2 rounded-xl border border-surface-container-high bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-all text-center">
+<input class="sr-only" name="spend_category" type="radio" value="Subscriptions"/>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant mb-0.5">subscriptions</span>
+<span class="text-xs font-medium leading-tight">Subscriptions</span>
+</label>
+<!-- 9. Study -->
+<label class="category-chip flex flex-col items-center justify-center p-2 rounded-xl border border-surface-container-high bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-all text-center">
+<input class="sr-only" name="spend_category" type="radio" value="Study"/>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant mb-0.5">menu_book</span>
+<span class="text-xs font-medium leading-tight">Study</span>
+</label>
+<!-- 10. Family -->
+<label class="category-chip flex flex-col items-center justify-center p-2 rounded-xl border border-surface-container-high bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-all text-center">
+<input class="sr-only" name="spend_category" type="radio" value="Family"/>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant mb-0.5">diversity_1</span>
+<span class="text-xs font-medium leading-tight">Family</span>
+</label>
+<!-- 11. Other -->
+<label class="category-chip flex flex-col items-center justify-center p-2 rounded-xl border border-surface-container-high bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-all text-center">
+<input class="sr-only" name="spend_category" type="radio" value="Other"/>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant mb-0.5">more_horiz</span>
+<span class="text-xs font-medium leading-tight">Other</span>
+</label>
+</div>
+</div>
+<!-- Need / Want Segmented Toggle Button (Need selected) -->
+<div>
+<span class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider block mb-1.5">Expense type</span>
+<div class="grid grid-cols-2 p-1 bg-surface-container rounded-xl gap-1" id="need-want-toggle">
+<button class="toggle-btn py-2 text-xs font-semibold rounded-lg bg-surface-container-lowest text-[#0F766E] shadow-sm flex items-center justify-center gap-1.5 transition-all" data-value="Need" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Need</span>
+</button>
+<button class="toggle-btn py-2 text-xs font-medium rounded-lg text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5 transition-all" data-value="Want" type="button">
+<span>Want</span>
+</button>
+</div>
+</div>
+<!-- Optional Note Input Field -->
+<div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">edit_note</span>
+<input class="w-full pl-9 pr-3 py-2 text-xs rounded-xl bg-surface-container-low border border-surface-container-high placeholder:text-on-surface-variant/70 text-on-surface focus:outline-none focus:border-[#0F766E] focus:ring-1 focus:ring-[#0F766E]" placeholder="Add a note (optional)" type="text"/>
+</div>
+</div>
+<!-- Reassurance line & Primary CTA -->
+<div class="flex flex-col gap-2 pt-0.5">
+<div class="flex items-center justify-center gap-1.5 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-[#0F766E]">auto_awesome</span>
+<span>I'll remember this for next time.</span>
+</div>
+<!-- Primary Action button: Full-width teal Save button -->
+<button class="w-full h-11 rounded-full bg-[#0F766E] text-white font-semibold text-sm flex items-center justify-center gap-1.5 shadow-md hover:bg-[#0c625c] active:scale-[0.99] transition-all" id="save-btn" type="button">
+<span>Save</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- Standard 5-tab bar at bottom: Home (active, teal pill / highlighted), Spends, Recurring, Analytics, Goals -->
+<nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl border-t border-surface-container" data-active-classes="[&amp;&gt;div]:bg-secondary-container [&amp;&gt;div]:text-on-secondary-container [&amp;&gt;span]:text-primary font-label-md">
+<div class="h-20 px-space-xs flex items-center justify-around">
+<!-- Home: Active Teal pill -->
+<a aria-current="page" class="flex flex-col items-center justify-center w-16 h-14 rounded-xl text-on-surface font-label-md transition-colors" data-path="home" href="#">
+<div class="w-12 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[24px]">home</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium tracking-normal mt-0.5">Home</span>
+</a>
+<!-- Spends -->
+<a class="flex flex-col items-center justify-center w-16 h-14 rounded-xl text-on-surface-variant hover:text-on-surface transition-colors" data-path="spends" href="#">
+<div class="w-12 h-8 rounded-full flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+</div>
+<span class="font-label-sm text-label-sm tracking-normal mt-0.5">Spends</span>
+</a>
+<!-- Recurring -->
+<a class="flex flex-col items-center justify-center w-16 h-14 rounded-xl text-on-surface-variant hover:text-on-surface transition-colors" data-path="recurring" href="#">
+<div class="w-12 h-8 rounded-full flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[24px]">event_repeat</span>
+</div>
+<span class="font-label-sm text-label-sm tracking-normal mt-0.5">Recurring</span>
+</a>
+<!-- Analytics -->
+<a class="flex flex-col items-center justify-center w-16 h-14 rounded-xl text-on-surface-variant hover:text-on-surface transition-colors" data-path="analytics" href="#">
+<div class="w-12 h-8 rounded-full flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[24px]">pie_chart</span>
+</div>
+<span class="font-label-sm text-label-sm tracking-normal mt-0.5">Analytics</span>
+</a>
+<!-- Goals -->
+<a class="flex flex-col items-center justify-center w-16 h-14 rounded-xl text-on-surface-variant hover:text-on-surface transition-colors" data-path="goals" href="#">
+<div class="w-12 h-8 rounded-full flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[24px]">savings</span>
+</div>
+<span class="font-label-sm text-label-sm tracking-normal mt-0.5">Goals</span>
+</a>
+</div>
+</nav>
+<script>
+    (function initWhatForSheet() {
+      // Category grid selection
+      const categoryChips = document.querySelectorAll('input[name="spend_category"]');
+      categoryChips.forEach(radio => {
+        radio.addEventListener('change', () => {
+          categoryChips.forEach(r => {
+            const label = r.closest('.category-chip');
+            const icon = label.querySelector('.material-symbols-outlined');
+            const text = label.querySelector('span:not(.material-symbols-outlined)');
+            
+            label.className = 'category-chip flex flex-col items-center justify-center p-2 rounded-xl border border-surface-container-high bg-surface-container-low text-on-surface hover:bg-surface-container cursor-pointer transition-all text-center';
+            icon.className = 'material-symbols-outlined text-[20px] text-on-surface-variant mb-0.5';
+            text.className = 'text-xs font-medium leading-tight';
+          });
+
+          const currentLabel = radio.closest('.category-chip');
+          const currentIcon = currentLabel.querySelector('.material-symbols-outlined');
+          const currentText = currentLabel.querySelector('span:not(.material-symbols-outlined)');
+
+          currentLabel.className = 'category-chip flex flex-col items-center justify-center p-2 rounded-xl border border-[#0F766E] bg-[#0F766E] text-white cursor-pointer shadow-sm transition-all text-center';
+          currentIcon.className = 'material-symbols-outlined text-[20px] mb-0.5';
+          currentText.className = 'text-xs font-semibold leading-tight';
+        });
+      });
+
+      // Need / Want Toggle
+      const toggleButtons = document.querySelectorAll('#need-want-toggle .toggle-btn');
+      toggleButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          toggleButtons.forEach(b => {
+            b.className = 'toggle-btn py-2 text-xs font-medium rounded-lg text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5 transition-all';
+            const icon = b.querySelector('.material-symbols-outlined');
+            if (icon) icon.remove();
+          });
+          btn.className = 'toggle-btn py-2 text-xs font-semibold rounded-lg bg-surface-container-lowest text-[#0F766E] shadow-sm flex items-center justify-center gap-1.5 transition-all';
+          const icon = document.createElement('span');
+          icon.className = 'material-symbols-outlined text-[16px]';
+          icon.textContent = 'check_circle';
+          btn.prepend(icon);
+        });
+      });
+
+      // Save Button Feedback
+      const saveBtn = document.getElementById('save-btn');
+      if (saveBtn) {
+        saveBtn.addEventListener('click', () => {
+          saveBtn.innerHTML = `
+            <span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span>
+            <span>Saving...</span>
+          `;
+          setTimeout(() => {
+            saveBtn.innerHTML = `
+              <span class="material-symbols-outlined text-[18px]">check</span>
+              <span>Saved</span>
+            `;
+            saveBtn.classList.replace('bg-[#0F766E]', 'bg-secondary');
+          }, 500);
+        });
+      }
+    })();
+  </script>
+</body></html>

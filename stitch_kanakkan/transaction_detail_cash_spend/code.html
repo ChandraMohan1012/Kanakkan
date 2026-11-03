@@ -1,0 +1,342 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "error-container": "#ffdad6", "on-tertiary": "#ffffff", "tertiary-container": "#945d00", "on-error": "#ffffff", "secondary-fixed-dim": "#6bd8cb", "surface-container-high": "#e1e8fd", "surface-container": "#e9edff", "on-tertiary-fixed": "#2a1700", "error": "#ba1a1a", "surface-container-low": "#f1f3ff", "surface-container-highest": "#dce2f7", "inverse-surface": "#293040", "surface-dim": "#d3daef", "outline": "#6e7977", "surface-variant": "#dce2f7", "primary-container": "#0f766e", "on-secondary-fixed": "#00201d", "tertiary-fixed-dim": "#ffb95f", "primary": "#005c55", "on-secondary-container": "#006f66", "outline-variant": "#bdc9c6", "secondary-fixed": "#89f5e7", "on-primary-fixed": "#00201d", "on-tertiary-fixed-variant": "#653e00", "on-primary": "#ffffff", "on-surface-variant": "#3e4947", "on-tertiary-container": "#ffe6cc", "surface-bright": "#f9f9ff", "on-primary-container": "#a3faef", "surface-tint": "#006a63", "on-primary-fixed-variant": "#00504a", "tertiary": "#734700", "surface": "#f9f9ff", "on-secondary": "#ffffff", "secondary": "#006a61", "inverse-on-surface": "#edf0ff", "tertiary-fixed": "#ffddb8", "on-error-container": "#93000a", "inverse-primary": "#80d5cb", "primary-fixed": "#9cf2e8", "on-background": "#141b2b", "secondary-container": "#86f2e4", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#005049", "background": "#f9f9ff", "primary-fixed-dim": "#80d5cb", "on-surface": "#141b2b" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-xl": "2rem", "space-md": "1rem", "margin": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem" }, fontFamily: { "label-sm": ["Inter"], "display-currency": ["Inter"], "headline-lg-mobile": ["Inter"], "body-sm": ["Inter"], "display-currency-mobile": ["Inter"], "title-md": ["Inter"], "title-lg": ["Inter"], "label-md": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Inter"], "headline-md": ["Inter"] }, fontSize: { "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.02em", fontWeight: "600" }], "display-currency": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "display-currency-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700" }], "title-md": ["16px", { lineHeight: "22px", fontWeight: "600" }], "title-lg": ["18px", { lineHeight: "24px", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", fontWeight: "500" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "20px", fontWeight: "500" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-md": ["22px", { lineHeight: "28px", fontWeight: "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-space-sm pt-1 pb-2 flex flex-col"><div class="h-14 flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><span class="font-title-lg text-title-lg text-on-surface tracking-tight font-semibold">Kanakkan</span></div><div class="flex items-center pr-space-xs"><div class="w-9 h-9 rounded-full bg-[#0f766e] text-white flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">person</span></div></div></div><div class="px-space-xs pb-1"><h1 class="font-title-md text-title-md text-on-surface tracking-tight font-semibold">Transaction Detail</h1></div></div></header><main class="flex-1 flex flex-col relative w-full pb-safe bg-surface pt-24"><div class="flex flex-col w-full pb-8">
+<!-- Segment Switcher Header -->
+<div class="px-margin pt-space-xs pb-space-sm">
+<div class="flex p-1 bg-surface-container rounded-full shadow-sm">
+<button class="flex-1 py-2 px-4 rounded-full font-label-lg text-label-lg transition-all duration-200 flex items-center justify-center gap-1.5 bg-primary text-on-primary shadow-sm" id="tab-btn-view" onclick="switchMode('view')" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+        View Details
+      </button>
+<button class="flex-1 py-2 px-4 rounded-full font-label-lg text-label-lg transition-all duration-200 flex items-center justify-center gap-1.5 text-on-surface-variant hover:text-on-surface" id="tab-btn-cash" onclick="switchMode('cash')" type="button">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+        Add Cash Spend
+      </button>
+</div>
+</div>
+<!-- TAB 1: TRANSACTION DETAIL VIEW -->
+<div class="flex flex-col px-margin gap-space-md" id="section-view-details">
+<!-- Main Highlight Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col items-center text-center relative overflow-hidden">
+<!-- Ambient Decorative Backdrop Circle -->
+<div class="absolute -top-12 -right-12 w-32 h-32 rounded-full bg-surface-container-high/40 pointer-events-none"></div>
+<!-- Merchant Avatar Badge -->
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center mb-space-sm relative">
+<span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+</div>
+<!-- Rupee Display -->
+<span class="font-display-currency-mobile text-display-currency-mobile text-on-surface tracking-tight">
+        -₹180<span class="text-body-lg text-on-surface-variant font-normal">.00</span>
+</span>
+<!-- Status Tag -->
+<div class="mt-space-xs inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+        Debited • Successful
+      </div>
+<!-- Payee Info Pill -->
+<div class="mt-space-md w-full p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between text-left">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">storefront</span>
+</div>
+<div class="min-w-0">
+<p class="font-title-md text-title-md text-on-surface truncate">Swiggy</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">UPI ID: swiggy@icici • Canara Bank ••1234</p>
+</div>
+</div>
+<button aria-label="Copy UPI ID" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-container active:bg-surface-container-high text-outline" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Metadata Details Sheet -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between py-2.5">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span class="font-body-md text-body-md">Date &amp; Time</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface text-right">Today, 14 Oct • 1:20 PM</span>
+</div>
+<div class="h-px bg-surface-container-high w-full"></div>
+<div class="flex items-center justify-between py-2.5"><div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-[20px]">account_balance</span><span class="font-body-md text-body-md">Account</span></div><span class="font-title-md text-title-md text-on-surface text-right">Canara Bank ••1234</span></div><div class="h-px bg-surface-container-high w-full"></div><div class="flex items-center justify-between py-2.5">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">sync_alt</span>
+<span class="font-body-md text-body-md">Detection</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">phonelink_lock</span>
+          SMS Auto-detected
+        </div>
+</div>
+<div class="h-px bg-surface-container-high w-full"></div>
+<div class="flex items-center justify-between py-2.5">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">category</span>
+<span class="font-body-md text-body-md">Category</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">fastfood</span>
+          Food and tea
+        </div>
+</div>
+<div class="h-px bg-surface-container-high w-full"></div>
+<div class="flex items-center justify-between py-2.5">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">pie_chart</span>
+<span class="font-body-md text-body-md">Classification</span>
+</div>
+<div class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+          Want (Discretionary)
+        </div>
+</div>
+<div class="h-px bg-surface-container-high w-full"></div>
+<!-- Note Area -->
+<div class="flex flex-col gap-1.5 pt-2 pb-1">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">notes</span>
+<span class="font-body-md text-body-md">Personal Note</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md leading-relaxed">
+          "Lunch bowl from FreshMenu (quick weekday meal)"
+        </div>
+</div>
+</div>
+<!-- Quick Stats Contextual Pill -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">analytics</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Monthly 'Food' Spent</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">UPI ID: swiggy@icici • Canara Bank ••1234</p>
+</div>
+</div>
+<div class="w-12 h-12 flex items-center justify-center">
+<!-- Circular Mini Indicator -->
+<svg class="w-10 h-10 -rotate-90" viewBox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="71, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+</div>
+</div>
+<!-- Primary Action Buttons -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 h-12 rounded-full bg-surface-container-high hover:bg-surface-container-highest active:scale-[0.98] transition-all flex items-center justify-center gap-2 font-label-lg text-label-lg text-primary" onclick="openEditDialog()" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+        Edit Entry
+      </button>
+<button class="h-12 px-5 rounded-full bg-error-container hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-1.5 font-label-lg text-label-lg text-error" onclick="confirmDelete()" type="button">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+        Delete
+      </button>
+</div>
+</div>
+<!-- TAB 2: ADD CASH SPEND FORM -->
+<div class="hidden flex-col px-margin gap-space-md" id="section-cash-form">
+<!-- Info Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+<div class="min-w-0">
+<h2 class="font-title-md text-title-md text-on-surface">Record Cash Outflow</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Auto-adjusts your monthly unbanked balance</p>
+</div>
+</div>
+<!-- Amount Entry Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col items-center">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-space-xs">Spent Amount</span>
+<div class="flex items-center justify-center w-full">
+<span class="font-display-currency-mobile text-display-currency-mobile text-primary mr-1">₹</span>
+<input class="font-display-currency-mobile text-display-currency-mobile text-on-surface text-center bg-transparent outline-none w-44 placeholder:text-surface-variant" id="cash-amount" inputmode="decimal" placeholder="0" type="number" value="40">
+</div>
+<div class="flex gap-2 mt-space-md">
+<button class="px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-md text-label-md active:bg-surface-container-high transition-colors" onclick="setCashAmount(20)" type="button">+₹20</button>
+<button class="px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-md text-label-md active:bg-surface-container-high transition-colors" onclick="setCashAmount(50)" type="button">+₹50</button>
+<button class="px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-md text-label-md active:bg-surface-container-high transition-colors" onclick="setCashAmount(100)" type="button">+₹100</button>
+</div>
+</div>
+<!-- Form Inputs Group -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Payee Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5" for="cash-payee">
+<span class="material-symbols-outlined text-[16px]">person</span>
+          Payee / Vendor
+        </label>
+<div class="relative flex items-center">
+<input class="w-full h-12 px-3.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:bg-surface-container transition-colors placeholder:text-outline" id="cash-payee" placeholder="e.g. Chai stall, Auto rickshaw, Sabzi mandi" type="text">
+</div>
+</div>
+<!-- Category Picker -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">grid_view</span>
+          Category
+        </label>
+<div class="grid grid-cols-2 gap-2">
+<button class="category-option h-11 px-3 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-2 transition-all shadow-sm" onclick="selectCategory(this, 'Food &amp; Tea')" type="button">
+<span class="material-symbols-outlined text-[18px]">local_cafe</span>
+<span class="truncate">Food &amp; Tea</span>
+</button>
+<button class="category-option h-11 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container transition-all" onclick="selectCategory(this, 'Transport')" type="button">
+<span class="material-symbols-outlined text-[18px]">local_taxi</span>
+<span class="truncate">Transport</span>
+</button>
+<button class="category-option h-11 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container transition-all" onclick="selectCategory(this, 'Groceries')" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span class="truncate">Groceries</span>
+</button>
+<button class="category-option h-11 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container transition-all" onclick="selectCategory(this, 'Other')" type="button">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+<span class="truncate">Other</span>
+</button>
+</div>
+</div>
+<!-- Need vs Want Classification Selector -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">balance</span>
+          Budget Rule (50/30/20)
+        </label>
+<div class="grid grid-cols-2 p-1 bg-surface-container-low rounded-lg gap-1">
+<button class="py-2 px-3 rounded-md font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all bg-surface-container-lowest text-primary shadow-sm" id="budget-need-btn" onclick="selectBudgetClassification('need')" type="button">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            Essential (Need)
+          </button>
+<button class="py-2 px-3 rounded-md font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all text-on-surface-variant hover:text-on-surface" id="budget-want-btn" onclick="selectBudgetClassification('want')" type="button">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+            Lifestyle (Want)
+          </button>
+</div>
+</div>
+<!-- Note Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5" for="cash-note">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+          Optional Note
+        </label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:bg-surface-container transition-colors resize-none placeholder:text-outline" id="cash-note" placeholder="e.g. Masala chai with office team" rows="2"></textarea>
+</div>
+</div>
+<!-- Submit Button -->
+<div class="pt-space-xs">
+<button class="w-full h-12 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md active:scale-[0.98] transition-all flex items-center justify-center gap-2" onclick="saveCashSpend()" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+        Save Cash Spend
+      </button>
+</div>
+</div>
+<!-- Notification Toast Modal (Floating Delight Element) -->
+<div class="fixed bottom-6 left-4 right-4 max-w-sm mx-auto bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-lg flex items-center justify-between gap-3 translate-y-24 opacity-0 pointer-events-none transition-all duration-300 z-50" id="toast-notification">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">verified</span>
+<span class="font-label-md text-label-md" id="toast-message">Entry updated</span>
+</div>
+<button class="text-inverse-on-surface/80 hover:text-inverse-on-surface" onclick="hideToast()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<script>
+  function switchMode(mode) {
+    const viewSection = document.getElementById('section-view-details');
+    const cashSection = document.getElementById('section-cash-form');
+    const viewBtn = document.getElementById('tab-btn-view');
+    const cashBtn = document.getElementById('tab-btn-cash');
+
+    if (mode === 'cash') {
+      viewSection.classList.add('hidden');
+      cashSection.classList.remove('hidden');
+      cashSection.classList.add('flex');
+
+      cashBtn.className = 'flex-1 py-2 px-4 rounded-full font-label-lg text-label-lg transition-all duration-200 flex items-center justify-center gap-1.5 bg-primary text-on-primary shadow-sm';
+      viewBtn.className = 'flex-1 py-2 px-4 rounded-full font-label-lg text-label-lg transition-all duration-200 flex items-center justify-center gap-1.5 text-on-surface-variant hover:text-on-surface';
+    } else {
+      cashSection.classList.add('hidden');
+      cashSection.classList.remove('flex');
+      viewSection.classList.remove('hidden');
+      viewSection.classList.add('flex');
+
+      viewBtn.className = 'flex-1 py-2 px-4 rounded-full font-label-lg text-label-lg transition-all duration-200 flex items-center justify-center gap-1.5 bg-primary text-on-primary shadow-sm';
+      cashBtn.className = 'flex-1 py-2 px-4 rounded-full font-label-lg text-label-lg transition-all duration-200 flex items-center justify-center gap-1.5 text-on-surface-variant hover:text-on-surface';
+    }
+  }
+
+  function setCashAmount(val) {
+    const input = document.getElementById('cash-amount');
+    const current = parseFloat(input.value) || 0;
+    input.value = current + val;
+  }
+
+  function selectCategory(buttonElement, catName) {
+    const allButtons = document.querySelectorAll('.category-option');
+    allButtons.forEach(btn => {
+      btn.className = 'category-option h-11 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container transition-all';
+    });
+    buttonElement.className = 'category-option h-11 px-3 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-2 transition-all shadow-sm';
+  }
+
+  function selectBudgetClassification(type) {
+    const needBtn = document.getElementById('budget-need-btn');
+    const wantBtn = document.getElementById('budget-want-btn');
+
+    if (type === 'need') {
+      needBtn.className = 'py-2 px-3 rounded-md font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all bg-surface-container-lowest text-primary shadow-sm';
+      wantBtn.className = 'py-2 px-3 rounded-md font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all text-on-surface-variant hover:text-on-surface';
+    } else {
+      wantBtn.className = 'py-2 px-3 rounded-md font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all bg-surface-container-lowest text-tertiary shadow-sm';
+      needBtn.className = 'py-2 px-3 rounded-md font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all text-on-surface-variant hover:text-on-surface';
+    }
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('toast-notification');
+    const msgEl = document.getElementById('toast-message');
+    msgEl.textContent = message;
+    toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      hideToast();
+    }, 3200);
+  }
+
+  function hideToast() {
+    const toast = document.getElementById('toast-notification');
+    toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+    toast.classList.remove('translate-y-0', 'opacity-100');
+  }
+
+  function saveCashSpend() {
+    const amount = document.getElementById('cash-amount').value || '0';
+    showToast(`Saved ₹${amount} cash expense`);
+    setTimeout(() => {
+      switchMode('view');
+    }, 1200);
+  }
+
+  function openEditDialog() {
+    showToast('Editing enabled for this record');
+  }
+
+  function confirmDelete() {
+    if (confirm('Delete this transaction? It will adjust your monthly calculations.')) {
+      showToast('Transaction removed successfully');
+    }
+  }
+</script></main>
+
+
+
+</body></html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html><html class="light" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-fixed": "#ffddb8", "inverse-on-surface": "#edf0ff", "surface-container-high": "#e1e8fd", "surface-container-lowest": "#ffffff", "background": "#f9f9ff", "surface-tint": "#006a63", "on-secondary-fixed-variant": "#005049", "on-secondary-fixed": "#00201d", "surface-container": "#e9edff", "outline-variant": "#bdc9c6", "on-surface": "#141b2b", "on-primary-fixed-variant": "#00504a", "on-secondary": "#ffffff", "on-tertiary-container": "#ffe6cc", "secondary": "#006a61", "surface-container-low": "#f1f3ff", "tertiary-container": "#945d00", "surface-bright": "#f9f9ff", "tertiary-fixed-dim": "#ffb95f", "on-tertiary-fixed": "#2a1700", "primary": "#005c55", "secondary-container": "#86f2e4", "inverse-primary": "#80d5cb", "secondary-fixed-dim": "#6bd8cb", "surface-container-highest": "#dce2f7", "outline": "#6e7977", "on-error-container": "#93000a", "primary-container": "#0f766e", "error": "#ba1a1a", "error-container": "#ffdad6", "secondary-fixed": "#89f5e7", "primary-fixed-dim": "#80d5cb", "primary-fixed": "#9cf2e8", "on-error": "#ffffff", "on-primary-container": "#a3faef", "inverse-surface": "#293040", "on-surface-variant": "#3e4947", "on-secondary-container": "#006f66", "on-background": "#141b2b", "tertiary": "#734700", "surface-variant": "#dce2f7", "surface": "#f9f9ff", "on-tertiary-fixed-variant": "#653e00", "on-primary": "#ffffff", "surface-dim": "#d3daef", "on-primary-fixed": "#00201d", "on-tertiary": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-lg": "1.5rem", "space-md": "1rem", "gutter": "1rem", "space-xl": "2rem", "space-xs": "0.25rem", "margin": "1rem" }, fontFamily: { "body-sm": ["Inter"], "label-md": ["Inter"], "display-currency-mobile": ["Inter"], "headline-lg-mobile": ["Inter"], "title-md": ["Inter"], "label-lg": ["Inter"], "headline-lg": ["Inter"], "title-lg": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Inter"], "display-currency": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "display-currency-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "display-currency": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen" style="background-color: rgb(247, 249, 248); min-height: max(884px, 100dvh);"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe" style="background-color: rgba(247, 249, 248, 0.88);"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button aria-label="Go Back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high/60 transition-colors" onclick="window.history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="text-title-lg font-title-lg text-on-surface tracking-tight truncate">Kanakkan</h1></div><div class="flex items-center gap-space-xs"><div class="w-9 h-9 rounded-full bg-[#0f766e] text-white flex items-center justify-center shadow-xs"><span class="material-symbols-outlined text-[20px]">person</span></div></div></div><div class="px-margin pb-3 pt-0.5 border-b border-surface-container"><h2 class="font-title-md text-title-md text-on-surface tracking-tight">Add Goal</h2></div></header><main class="flex-1 flex flex-col relative w-full pb-safe bg-surface pt-28"><div class="flex flex-col w-full pb-8">
+<div class="px-margin pt-4 pb-2">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-2 shadow-sm">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="">Thoughtful Wealth Building</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Create Savings Target</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Set a calm, achievable savings target aligned with your monthly surplus.</p>
+</div>
+<div class="px-margin my-3">
+<div class="relative overflow-hidden rounded-2xl p-4 shadow-sm bg-surface-container-lowest">
+<div class="flex items-center gap-3">
+<div class="relative w-16 h-16 rounded-xl overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A serene warm sunlight desk with a small lush money plant in ceramic pot, a neat financial leather journal, and warm diffused morning glow in modern soft teal and amber tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNU15SOX_ZaHIb0S-WIGeVNIQth7t648jpfg-PcIg_GS-u1wrswrn24Vczpem0bksLSR9iKxuwy7Oy3fnZlfZlzVHpb1uufRHtqU00YrXkFnI1KW0YhCNPGPnTAJT7bSVFCwKDh4Aa2gmq9S101Q_nbSpIAWGPM3N2W8DRgcw-OVzcQdG8QhGVfaq_UwnrpA8b-BsJRti9vhdvCCBTWCNS1F48DPp8zrK9FGz0rxk">
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-md text-label-md text-secondary font-semibold">Smart Allocation Insight</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cycle Balance</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5 truncate font-medium">Safe surplus from ₹45,000 salary (Canara ••1234): <span class="font-semibold text-primary">₹4,500/mo</span></p>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" id="visualSurplusBar" style="width: 48%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<form class="flex flex-col gap-4 px-margin mt-1" id="goalForm" onsubmit="event.preventDefault(); triggerCelebration();">
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-on-surface flex items-center gap-2" for="goalNameInput">
+<span class="material-symbols-outlined text-primary text-[20px]">flag</span>
+          Goal Name
+        </label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Required</span>
+</div>
+<div class="relative">
+<input class="w-full h-13 px-4 py-3 bg-surface-container-low rounded-xl font-body-lg text-body-lg text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container transition-all" id="goalNameInput" placeholder="e.g., Emergency Fund, New Phone, Travel" required="" type="text" value="Emergency Fund">
+<button aria-label="Clear goal name" class="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center text-outline hover:text-on-surface transition-colors rounded-2xl" onclick="clearGoalName()" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<div class="flex flex-wrap gap-2 pt-1">
+<button class="preset-pill px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center gap-1 active:scale-95" onclick="setPresetName('Emergency Fund')" type="button">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+          Emergency Fund
+        </button>
+<button class="preset-pill px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center gap-1 active:scale-95" onclick="setPresetName('Tech Upgrade')" type="button">
+<span class="material-symbols-outlined text-[14px]">laptop_mac</span>
+          Tech Upgrade
+        </button>
+<button class="preset-pill px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center gap-1 active:scale-95" onclick="setPresetName('Vacation in Himachal')" type="button">
+<span class="material-symbols-outlined text-[14px]">flight_takeoff</span>
+          Vacation
+        </button>
+<button class="preset-pill px-3 py-1.5 bg-surface-container text-on-surface font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center gap-1 active:scale-95 rounded-2xl" onclick="setPresetName('Bike Downpayment')" type="button">
+<span class="material-symbols-outlined text-[14px]">two_wheeler</span>
+          Bike Downpayment
+        </button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-on-surface flex items-center gap-2" for="targetAmountInput">
+<span class="material-symbols-outlined text-primary text-[20px]">payments</span>
+          Target Amount
+        </label>
+<span class="font-label-sm text-label-sm text-secondary font-medium" id="paceEstimateBadge">~5 months at current pace</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3 flex items-center gap-2 focus-within:bg-surface-container transition-all">
+<span class="font-display-currency-mobile text-display-currency-mobile text-primary select-none pl-1">₹</span>
+<input class="w-full bg-transparent font-display-currency-mobile text-display-currency-mobile text-on-surface tracking-tight focus:outline-none" id="targetAmountInput" inputmode="numeric" oninput="handleAmountInput(this)" placeholder="0" required="" type="text" value="75,000">
+</div>
+<div class="flex items-center gap-2 pt-1 overflow-x-auto pb-0.5">
+<button class="shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors active:scale-95 font-semibold" onclick="addAmount(10000)" type="button">
+          + ₹10,000
+        </button>
+<button class="shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors active:scale-95 font-semibold" onclick="addAmount(25000)" type="button">
+          + ₹25,000
+        </button>
+<button class="shrink-0 px-3.5 py-1.5 bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors active:scale-95 font-semibold rounded-2xl" onclick="addAmount(50000)" type="button">
+          + ₹50,000
+        </button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-on-surface flex items-center gap-2" for="targetDateInput">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_month</span>
+          Target Date <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">(Optional)</span>
+</label>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">event_available</span>
+</div>
+<div class="relative">
+<input class="w-full h-12 pl-4 pr-11 bg-surface-container-low rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-all" id="targetDateInput" placeholder="e.g., March 2027" type="text" value="March 2027">
+<div class="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full flex items-center justify-center text-primary pointer-events-none">
+<span class="material-symbols-outlined text-[20px]">edit_calendar</span>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-2 pt-1">
+<button class="py-1.5 px-2 rounded-xl bg-surface-container text-center font-label-md text-label-md text-on-surface hover:bg-secondary-container hover:text-on-secondary-container transition-all active:scale-95" onclick="setDatePreset('3 Months')" type="button">
+          3 Mos
+        </button>
+<button class="py-1.5 px-2 rounded-xl bg-surface-container text-center font-label-md text-label-md text-on-surface hover:bg-secondary-container hover:text-on-secondary-container transition-all active:scale-95" onclick="setDatePreset('6 Months')" type="button">
+          6 Mos
+        </button>
+<button class="py-1.5 px-2 rounded-xl bg-surface-container text-center font-label-md text-label-md text-on-surface hover:bg-secondary-container hover:text-on-secondary-container transition-all active:scale-95" onclick="setDatePreset('1 Year')" type="button">
+          1 Year
+        </button>
+<button class="py-1.5 px-2 rounded-xl bg-surface-container-high text-center font-label-md text-label-md text-on-surface-variant hover:bg-surface-container transition-all active:scale-95 rounded-2xl" onclick="setDatePreset('No rush')" type="button">
+          No rush
+        </button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-on-surface flex items-center gap-2" for="goalReasonInput">
+<span class="material-symbols-outlined text-primary text-[20px]">psychology_alt</span>
+          Why this goal matters
+        </label>
+<span class="material-symbols-outlined text-tertiary text-[18px]">favorite</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reminding yourself of the purpose helps prevent impulse spending.</p>
+<div class="relative mt-1">
+<textarea class="w-full p-3.5 bg-surface-container-low rounded-xl font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container transition-all resize-none leading-relaxed" id="goalReasonInput" placeholder="e.g., Gives me 3 months of quiet freedom if I ever need a career break..." rows="3">Gives me 3 months of quiet freedom and peace of mind during any career transitions.</textarea>
+</div>
+<div class="flex items-center gap-1.5 pt-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm text-secondary">Emotional intent linked to monthly savings</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm">
+<label class="flex items-start justify-between gap-3 cursor-pointer">
+<div class="flex flex-col gap-0.5">
+<span class="font-title-md text-title-md text-on-surface flex items-center gap-1.5">
+            Set as Active Goal right away
+            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Surplus money from your monthly cycle will flow to this goal first.</span>
+</div>
+<div class="relative shrink-0 pt-0.5">
+<input checked="" class="peer sr-only" id="activeGoalToggle" onchange="toggleActiveState(this)" type="checkbox">
+<div class="w-13 h-7 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:bg-primary transition-colors"></div>
+<div class="absolute left-1 top-1.5 bg-white w-5 h-5 rounded-full transition-transform peer-checked:translate-x-6 flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-primary text-[14px] opacity-0 peer-checked:opacity-100 transition-opacity">check</span>
+</div>
+</div>
+</label>
+</div>
+<div class="mt-4 flex flex-col gap-2.5">
+<button class="w-full h-14 bg-primary-container text-on-primary font-title-md text-title-md shadow-md hover:bg-primary active:scale-[0.98] transition-all flex items-center justify-center gap-2 rounded-2xl" type="submit">
+<span class="material-symbols-outlined text-[20px]">savings</span>
+<span class="">Save Goal</span>
+</button>
+<button class="w-full h-12 bg-surface-container-low text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container active:scale-[0.98] transition-all flex items-center justify-center rounded-2xl" onclick="window.history.back()" type="button">
+        Discard &amp; Back
+      </button>
+</div>
+</form>
+<div class="fixed bottom-6 left-margin right-margin z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="bg-inverse-surface text-inverse-on-surface p-4 rounded-2xl shadow-xl flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary text-[18px]">check</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-title-md text-title-md">Goal successfully mapped!</p>
+<p class="font-body-sm text-body-sm text-surface-container-high truncate">Safe surplus from ₹45,000 salary (Canara ••1234): <span class="font-semibold text-primary">₹4,500/mo</span></p>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function formatRupee(val) {
+    const num = parseInt(val.toString().replace(/,/g, ''), 10);
+    if (isNaN(num)) return '';
+    return num.toLocaleString('en-IN');
+  }
+
+  function handleAmountInput(el) {
+    const rawVal = el.value.replace(/\D/g, '');
+    if (!rawVal) {
+      el.value = '';
+      updatePaceBadge(0);
+      return;
+    }
+    const formatted = parseInt(rawVal, 10).toLocaleString('en-IN');
+    el.value = formatted;
+    updatePaceBadge(parseInt(rawVal, 10));
+  }
+
+  function addAmount(added) {
+    const input = document.getElementById('targetAmountInput');
+    const curVal = parseInt(input.value.replace(/,/g, '') || '0', 10);
+    const sum = curVal + added;
+    input.value = sum.toLocaleString('en-IN');
+    updatePaceBadge(sum);
+  }
+
+  function updatePaceBadge(amount) {
+    const badge = document.getElementById('paceEstimateBadge');
+    const bar = document.getElementById('visualSurplusBar');
+    if (!badge || !bar) return;
+    if (amount <= 0) {
+      badge.textContent = 'Enter an amount';
+      bar.style.width = '10%';
+      return;
+    }
+    const monthlyRate = 14500;
+    const months = Math.ceil(amount / monthlyRate);
+    if (months <= 1) {
+      badge.textContent = '~1 month at current pace';
+      bar.style.width = '90%';
+    } else {
+      badge.textContent = `~${months} months at current pace`;
+      const fillPercentage = Math.min(100, Math.max(15, Math.round((monthlyRate * 3 / amount) * 100)));
+      bar.style.width = `${fillPercentage}%`;
+    }
+  }
+
+  function setPresetName(name) {
+    const input = document.getElementById('goalNameInput');
+    if (input) {
+      input.value = name;
+      input.focus();
+    }
+  }
+
+  function clearGoalName() {
+    const input = document.getElementById('goalNameInput');
+    if (input) {
+      input.value = '';
+      input.focus();
+    }
+  }
+
+  function setDatePreset(duration) {
+    const input = document.getElementById('targetDateInput');
+    if (!input) return;
+    const now = new Date();
+    if (duration === '3 Months') {
+      now.setMonth(now.getMonth() + 3);
+      input.value = now.toLocaleString('default', { month: 'long', year: 'numeric' });
+    } else if (duration === '6 Months') {
+      now.setMonth(now.getMonth() + 6);
+      input.value = now.toLocaleString('default', { month: 'long', year: 'numeric' });
+    } else if (duration === '1 Year') {
+      now.setFullYear(now.getFullYear() + 1);
+      input.value = now.toLocaleString('default', { month: 'long', year: 'numeric' });
+    } else {
+      input.value = 'Open-ended';
+    }
+  }
+
+  function toggleActiveState(checkbox) {
+    const bar = document.getElementById('visualSurplusBar');
+    if (bar) {
+      bar.className = checkbox.checked 
+        ? 'bg-primary h-full rounded-full transition-all duration-500'
+        : 'bg-outline-variant h-full rounded-full transition-all duration-500';
+    }
+  }
+
+  function triggerCelebration() {
+    const toast = document.getElementById('toastNotification');
+    if (toast) {
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3200);
+    }
+  }
+</script></main>
+
+
+
+
+
+
+
+
+
+</body></html>

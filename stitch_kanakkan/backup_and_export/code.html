@@ -1,0 +1,193 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f9f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#2a1700", "primary-fixed": "#9cf2e8", "on-primary-container": "#a3faef", "tertiary-fixed-dim": "#ffb95f", "secondary-fixed-dim": "#6bd8cb", "surface-bright": "#f9f9ff", "inverse-surface": "#293040", "on-primary-fixed": "#00201d", "tertiary-fixed": "#ffddb8", "on-secondary-container": "#006f66", "on-error-container": "#93000a", "on-surface": "#141b2b", "inverse-primary": "#80d5cb", "surface-container-lowest": "#ffffff", "on-background": "#141b2b", "on-primary": "#ffffff", "on-secondary": "#ffffff", "surface-dim": "#d3daef", "tertiary": "#734700", "on-secondary-fixed": "#00201d", "on-secondary-fixed-variant": "#005049", "primary-container": "#0f766e", "inverse-on-surface": "#edf0ff", "secondary-fixed": "#89f5e7", "background": "#f9f9ff", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "on-tertiary-container": "#ffe6cc", "outline": "#6e7977", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#653e00", "outline-variant": "#bdc9c6", "primary-fixed-dim": "#80d5cb", "surface-container": "#e9edff", "surface-tint": "#006a63", "surface": "#f9f9ff", "surface-container-high": "#e1e8fd", "on-surface-variant": "#3e4947", "surface-variant": "#dce2f7", "secondary": "#006a61", "on-primary-fixed-variant": "#00504a", "error": "#ba1a1a", "surface-container-low": "#f1f3ff", "primary": "#005c55", "secondary-container": "#86f2e4", "tertiary-container": "#945d00", "surface-container-highest": "#dce2f7" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-md": "1rem", "margin": "1rem", "space-xl": "2rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-md": ["Inter"], "label-sm": ["Inter"], "headline-lg-mobile": ["Inter"], "display-currency": ["Inter"], "body-sm": ["Inter"], "label-lg": ["Inter"], "title-lg": ["Inter"], "display-currency-mobile": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], "title-md": ["Inter"], "headline-lg": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-currency": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "display-currency-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-12 h-12 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high/60 transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><span class="font-title-lg text-title-lg text-primary-container tracking-tight">Kanakkan</span></div><div class="flex items-center"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-10">
+<!-- Sub-screen Header Block -->
+<section class="px-margin pt-4 pb-2">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md mb-1">
+<span class="material-symbols-outlined text-[16px]">security</span>
+<span class="">Your data is private and encrypted</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">
+      Backup and Export
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-snug">Encrypted backup to Google Drive or a local file.</p>
+</section>
+<!-- Main Content Stack -->
+<div class="flex flex-col gap-space-lg px-margin mt-3">
+<!-- 1. Automated Local Backup Card -->
+<section class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant px-1 font-semibold uppercase tracking-wider">
+        Local Database Storage
+      </span>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-4">
+<!-- Toggle Header Row -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 flex items-center justify-center shrink-0 text-on-secondary-container mt-0.5">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">cloud_off</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Weekly automated backup</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">
+                Saves an encrypted copy of your SQLite ledger every Sunday at 02:00 AM
+              </span>
+</div>
+</div>
+<!-- Material 3 Switch Component -->
+<button aria-checked="true" class="relative inline-flex h-8 w-14 shrink-0 cursor-pointer rounded-full bg-primary p-1 transition-colors duration-200 ease-in-out focus:outline-none" id="auto-backup-toggle" onclick="const isChecked = this.getAttribute('aria-checked') === 'true'; this.setAttribute('aria-checked', !isChecked); this.classList.toggle('bg-primary'); this.classList.toggle('bg-surface-variant'); this.querySelector('span.thumb').classList.toggle('translate-x-6'); this.querySelector('span.thumb').classList.toggle('translate-x-0');" role="switch" type="button">
+<span class="thumb translate-x-6 pointer-events-none flex h-6 w-6 transform items-center justify-center rounded-full bg-on-primary shadow-sm transition duration-200 ease-in-out">
+<span class="material-symbols-outlined text-[14px] text-primary">check</span>
+</span>
+</button>
+</div>
+<!-- Last Backup Status Box -->
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Last backup created</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-secondary-container/50 px-2 py-0.5 rounded-full font-semibold">Healthy</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Yesterday, 11:42 PM <span class="text-outline mx-1">•</span> Size: 420 KB <span class="text-outline mx-1">•</span> 1,280 transactions
+          </p>
+<!-- Encryption Badge -->
+<div class="flex items-start gap-2 bg-surface-container-lowest/80 p-2.5 rounded-lg mt-0.5">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">lock</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Encrypted on device</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Protected with your 4-digit master PIN. Cannot be read without your local security key.
+              </span>
+</div>
+</div>
+</div>
+<!-- Manual Backup CTA -->
+<button class="w-full h-12 rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:opacity-90 transition-transform active:scale-[0.99]" id="btn-manual-backup" onclick="const b = this; b.disabled = true; b.innerHTML = '&lt;span class=\'material-symbols-outlined animate-spin text-[20px]\'&gt;sync&lt;/span&gt; Archiving ledger...'; setTimeout(() =&gt; { b.innerHTML = '&lt;span class=\'material-symbols-outlined text-[20px]\'&gt;done&lt;/span&gt; Backup Completed (424 KB)'; setTimeout(() =&gt; { b.innerHTML = '&lt;span class=\'material-symbols-outlined text-[20px]\'&gt;history&lt;/span&gt; Create New Backup'; b.disabled = false; }, 2400); }, 1400);" type="button">
+<span class="material-symbols-outlined text-[20px]">history</span>
+<span class="">Create New Backup</span>
+</button>
+</div>
+</section>
+<!-- 2. Export Records Section -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex flex-col px-1">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold uppercase tracking-wider">
+          Export Records
+        </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+          Export your transactions for tax filing, CA audit, or personal spreadsheets.
+        </span>
+</div>
+<!-- Date Range Chips -->
+<div class="flex items-center gap-2 overflow-x-auto py-1 scrollbar-none" id="export-range-group">
+<button class="filter-chip shrink-0 h-8 px-3.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-1.5 transition-colors font-semibold" onclick="document.querySelectorAll('.filter-chip').forEach(el =&gt; { el.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold'); el.classList.add('bg-surface-container-high', 'text-on-surface'); }); this.classList.remove('bg-surface-container-high', 'text-on-surface'); this.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');" type="button">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span class="">Current Cycle (1 Nov - 30 Nov)</span>
+</button>
+<button class="filter-chip shrink-0 h-8 px-3 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center transition-colors" onclick="document.querySelectorAll('.filter-chip').forEach(el =&gt; { el.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold'); el.classList.add('bg-surface-container-high', 'text-on-surface'); }); this.classList.remove('bg-surface-container-high', 'text-on-surface'); this.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');" type="button">
+<span class="">Last 3 Months</span>
+</button>
+<button class="filter-chip shrink-0 h-8 px-3 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center transition-colors" onclick="document.querySelectorAll('.filter-chip').forEach(el =&gt; { el.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold'); el.classList.add('bg-surface-container-high', 'text-on-surface'); }); this.classList.remove('bg-surface-container-high', 'text-on-surface'); this.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');" type="button">
+<span class="">All Time</span>
+</button>
+</div>
+<!-- Export Action Cards -->
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- CSV Export Tile -->
+<button class="w-full text-left bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between gap-space-md active:bg-surface-container-low transition-colors min-h-[56px]" onclick="const note = document.getElementById('export-status'); note.innerText = 'Generating CSV export...'; note.classList.remove('hidden'); setTimeout(() =&gt; { note.innerText = 'kanakkan_ledger_nov2024.csv ready (48 KB)'; }, 1000);" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/60 flex items-center justify-center shrink-0 text-on-secondary-container">
+<span class="material-symbols-outlined text-[26px]">table_chart</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface">Export as CSV</span>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-1.5 py-0.2 rounded font-semibold">.csv</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+                Compatible with Excel, Google Sheets, and Numbers
+              </span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</div>
+</button>
+<!-- JSON Export Tile -->
+<button class="w-full text-left bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between gap-space-md active:bg-surface-container-low transition-colors min-h-[56px]" onclick="const note = document.getElementById('export-status'); note.innerText = 'Packaging complete JSON dump...'; note.classList.remove('hidden'); setTimeout(() =&gt; { note.innerText = 'kanakkan_full_dump.json ready (180 KB)'; }, 1000);" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[26px]">data_object</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface">Export as Raw JSON</span>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-1.5 py-0.2 rounded font-semibold">.json</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+                Full structured data dump including categories and rules
+              </span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">file_download</span>
+</div>
+</button>
+<!-- Feedback Notification Banner -->
+<div class="hidden font-label-md text-label-md text-center py-2 px-3 bg-secondary-container/40 text-on-secondary-container rounded-lg" id="export-status"></div>
+</div>
+</section>
+<!-- 3. Restore & Recovery Section -->
+<section class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant px-1 font-semibold uppercase tracking-wider">
+        Restore &amp; Recovery
+      </span>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-4">
+<!-- Interactive Pick File Row -->
+<button class="w-full text-left flex items-start gap-space-md active:opacity-80 transition-opacity" onclick="const dialog = document.getElementById('restore-feedback'); dialog.classList.remove('hidden');" type="button">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/40 text-tertiary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">file_open</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-title-md text-title-md text-on-surface">Restore from file</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+              Select a <code class="bg-surface-container-high px-1 py-0.5 rounded text-primary font-semibold">.kanakkan.enc</code> backup archive to recover transaction history.
+            </span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0 mt-2">chevron_right</span>
+</button>
+<div class="hidden p-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm flex items-center justify-between" id="restore-feedback">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">folder</span>
+            Ready to select file in system storage...
+          </span>
+<button class="text-primary font-label-md text-label-md font-semibold" onclick="document.getElementById('restore-feedback').classList.add('hidden')" type="button">Dismiss</button>
+</div>
+<!-- Warning Callout Box -->
+<div class="bg-surface-container-low/70 rounded-xl p-3 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+            Restoring replaces conflicting records while preserving your current cycle setup, budget allocations, and custom category tagging.
+          </p>
+</div>
+</div>
+</section>
+<!-- 4. Privacy Guarantee Footer Badge -->
+<div class="flex flex-col items-center justify-center text-center gap-1.5 mt-2 mb-2 py-3 px-4 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-1.5 text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="">Zero Telemetry Guarantee</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Your data is private and encrypted • Standard AES-256 GCM encryption</p>
+</div>
+</div>
+</div></main>
+
+</body></html>
